@@ -4,8 +4,13 @@ xmlns="http://www.w3.org/2000/svg">
 
   <defs>
   <!--mayor-->
-<symbol id="mayor">
-<path d="M1.61646 1L6.04413 5L1.61646 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<symbol id="mayor" viewBox="0 0 19 32">
+<path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.2 3.2l12.8 12.8-12.8 12.8"></path>
+</symbol>
+
+ <!--mayor-white-->
+<symbol id="mayor-white" viewBox="0 0 19 32">
+<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.2 3.2l12.8 12.8-12.8 12.8"></path>
 </symbol>
 <!--logo-->
 <symbol id="logo">
@@ -52,6 +57,16 @@ xmlns="http://www.w3.org/2000/svg">
 <!--facebook-->
 <symbol id="facebook">
 <path d="M9.72348 10.9804H6.95018V21.2001H2.74839V10.9804H0.75V7.38881H2.74839V5.06464C2.74839 3.40261 3.53328 0.800049 6.98758 0.800049L10.1 0.813146V4.2994H7.84174C7.47132 4.2994 6.95046 4.48555 6.95046 5.27839V7.39216H10.0906L9.72348 10.9804Z" fill="white"/>
+</symbol>
+
+<!--ellipse-->
+<symbol id="ellipse" viewBox="0 0 32 32">
+<path fill="#ffa5ba" style="fill: var(--color1, #ffa5ba)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+</symbol>
+
+<!--ellipse-white-->
+<symbol id="ellipse-white" viewBox="0 0 32 32">
+<path fill="#fff" style="fill: var(--color1, #fff)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
 </symbol>
    
   </defs>
