@@ -1,0 +1,154 @@
+.bg__pink{
+    background-color:$light-pink;
+    position: relative;
+    z-index: 2;
+    height: 664px;
+}
+
+//header//
+.header{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 30px 0;
+}
+
+.navegation{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    z-index: 10;
+}
+
+.navegation__list{
+    display: flex;
+    gap: 35px;
+    font-family: 'DM Sans';
+}
+
+.navegation__item{
+    color: $white;
+    font-weight: 700;
+}
+
+.navegation__link:hover{
+    color: $red;
+}
+.navegation__link--active{
+    color: $red;
+}
+
+.navegation__btn{
+    padding: 15px 38px;
+    border-radius:22px;
+    border: none;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font-family: 'DM Sans';
+}
+
+//cream title//
+.cream__title{
+    font-weight: 400;
+    font-size: 38px;
+    width: 277px;
+    color: $white;
+    font-family: 'Titan One';
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+.cream__span{
+    color: $red;
+}
+
+.cream__item{
+    margin-top: 24px;
+}
+.cream__products{
+    padding: 15px;
+    border: none;
+    border-radius: 22px;
+    background-color: $red;
+    color: $white;
+    font-family: 'DM Sans';
+}
+
+.cream__howitmade{
+    padding: 15px;
+    border: none;
+    border-radius: 22px;
+    color: $red;
+    font-family: 'DM Sans';
+    margin-left: 15px;
+}
+
+//milk//
+.milk{
+    display: flex;
+    align-items: center;
+    margin-top: 65px;
+    width: 500px;
+}
+
+.milk__paragraph{
+    width: 200px;
+    color: $white;
+    font-family: 'DM Sans';
+}
+
+.milk__jug{
+    width: 213px;
+    height: 216px;
+}
+
+.milk__arrow{
+    padding-top: 20px;
+}
+
+//ellipse//
+.ellipse__svg{
+    position: absolute;
+    top: 40px;
+    left: 627px;
+}
+
+.ellipse__img {
+    position: absolute;
+    top: 102px;
+    left: 734px;;
+}
+
+//number//
+.number{
+    position: absolute;
+    top: 115px;
+    right: 55px;
+}
+
+.number__item{
+    margin-bottom: 15px;
+}
+
+.number__span{
+    color: $red;
+    font-size: 46px;
+    font-weight: 400;
+}
+
+.number__svg{
+    position: absolute;
+    right: 30px;
+}
+
+.number__paragraph{
+    color: $white;
+    text-align: center;
+}
+//women//
+.women{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}

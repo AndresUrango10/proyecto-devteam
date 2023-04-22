@@ -1,99 +1,105 @@
-<div class="container">
-  <header>
-    <svg class="" width="199px" height="50px">
-      <use href="./images/icons.svg#logo"></use>
-    </svg>
-
-    <nav class="navegation">
-      <ul class="navegation__list list">
-        <li class="navegation__item">
-          <a class="navegation__link link" href="#"> Home </a>
-        </li>
-        <li class="navegation__item">
-          <a class="navegation__link link" href="#"> About us </a>
-        </li>
-        <li class="navegation__item">
-          <a class="navegation__link link" href="#"> How it’s made? </a>
-        </li>
-        <li class="navegation__item">
-          <a class="navegation__link link" href="#"> Our products </a>
-        </li>
-        <li class="navegation__item">
-          <a class="navegation__link link" href="#"> Contact </a>
-        </li>
-      </ul>
-    </nav>
-    <button type="button">
-      Buy now
-      <svg class="contact__icon" width="16px" height="12px">
-        <use href="./images/icons.svg#mayor"></use>
+<div class="bg__pink">
+  <div class="container">
+    <header class="header">
+      <svg class="" width="199px" height="50px">
+        <use href="./images/icons.svg#logo"></use>
       </svg>
-    </button>
-  </header>
-  <h1>ice cream made with <span>passion</span></h1>
-  <button>Products</button>
-  <button>How it’s made?</button>
 
-  <ul class="list">
-    <li>
-      <img src="./images/milk-jug.jpg" alt="jarra de leche" />
-    </li>
-    <li>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et
-        <img src="./images/arrow.jpg" alt="" />
-      </p>
-    </li>
-  </ul>
+      <nav class="navegation">
+        <ul class="navegation__list list">
+          <li class="navegation__item">
+            <a class="navegation__link link navegation__link--active" href="#">
+              Home
+            </a>
+          </li>
+          <li class="navegation__item">
+            <a class="navegation__link link" href="#"> About us </a>
+          </li>
+          <li class="navegation__item">
+            <a class="navegation__link link" href="#"> How it’s made? </a>
+          </li>
+          <li class="navegation__item">
+            <a class="navegation__link link" href="#"> Our products </a>
+          </li>
+          <li class="navegation__item">
+            <a class="navegation__link link" href="#"> Contact </a>
+          </li>
+        </ul>
+      </nav>
+      <button class="navegation__btn" type="button">
+        Buy now
+        <svg class="contact__icon" width="10px" height="10px">
+          <use href="./images/icons.svg#mayor"></use>
+        </svg>
+      </button>
+    </header>
+    <ul class="cream list">
+      <h1 class="cream__title">
+        ice cream made with <span class="cream__span">passion</span>
+      </h1>
+      <li class="cream__item">
+        <button class="cream__products">Products</button>
+        <button class="cream__howitmade">How it’s made?</button>
+      </li>
+    </ul>
 
-  <ul class="list">
-    <li>
-      <svg class="" width="50px" height="50px">
-        <use href="./images/icons.svg#ellipse"></use>
-      </svg>
-    </li>
+    <ul class="milk list">
+      <li class="milk__item">
+        <img
+          class="milk__jug"
+          src="./images/milk-jug.png"
+          alt="jarra de leche"
+        />
+      </li>
+      <li class="milk__item">
+        <p class="milk__paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+          <img
+            class="milk__arrow"
+            src="./images/arrow-right.png"
+            alt="flecha derecha"
+          />
+        </p>
+      </li>
+    </ul>
 
-    <li>
-      <img src="./images/frozen.jpg" alt="helado" />
-    </li>
-  </ul>
+    <ul class="ellipse list">
+      <li class="ellipse__item">
+        <svg class="ellipse__svg" width="534px" height="534px">
+          <use href="./images/icons.svg#ellipse"></use>
+        </svg>
+      </li>
 
-  <ul class="list">
-    <li>
-      <span
-        >16
-        <svg class="" width="50px" height="50px">
+      <li class="ellipse__item">
+        <img class="ellipse__img" src="./images/helado.png" alt="helado" />
+      </li>
+    </ul>
+
+    <ul class="number list">
+      <li class="number__item">
+        <span class="number__span"
+          >16
+          <svg class="number__svg" width="30px" height="30px">
+            <use href="./images/icons.svg#ellipse-white"></use></svg
+        ></span>
+        <p class="number__paragraph">Cafes</p>
+      </li>
+
+      <!-- <li>
+      <span class="number__span"
+        >23
+        <svg class="number__svg" width="30px" height="30px">
           <use href="./images/icons.svg#ellipse-white"></use></svg
       ></span>
-      <p>Cafes</p>
-    </li>
+      <p class="number__paragraph">Food trucks</p>
+    </li> -->
+    </ul>
 
-    <li>
-      <span
-        >16
-        <svg class="" width="50px" height="50px">
-          <use href="./images/icons.svg#ellipse-white"></use></svg
-      ></span>
-      <p>Food trucks</p>
-    </li>
-  </ul>
-
-  <ul class="list">
-    <li>
-      <img src="./images/women.jpg" alt="mujer" />
-    </li>
-  </ul>
-
-  <ul class="list">
-    <li>
-      <img src="./images/women.jpg" alt="mujer" />
-    </li>
-  </ul>
-
-  <ul class="list">
-    <li>
-      <img src="./images/women.jpg" alt="mujer" />
-    </li>
-  </ul>
+    <ul class="women list">
+      <li class="women__item">
+        <img class="women__img" src="./images/women.png" alt="mujer" />
+      </li>
+    </ul>
+  </div>
 </div>
