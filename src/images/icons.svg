@@ -69,5 +69,15 @@ xmlns="http://www.w3.org/2000/svg">
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
 </symbol>
    
+   <!--cerrar X-->
+   <symbol id="icon-cerrar" viewBox="0 0 32 32">
+      <path d="m26.667 7.303-1.97-1.97-7.808 7.808-7.808-7.808-1.97 1.97 7.808 7.808-7.808 7.808 1.97 1.97 7.808-7.808 7.808 7.808 1.97-1.97-7.808-7.808 7.808-7.808z"/>
+    </symbol>
+    
+   <!--toggle-->
+    <symbol id="menu-toggle" viewBox="0 0 32 32">
+      <path d="M6.4 11.733V9.6h19.2v2.133H6.4zm0 5.334h19.2v-2.133H6.4v2.133zm0 5.333h19.2v-2.133H6.4V22.4z"/>
+    </symbol>
+
   </defs>
 </svg>

@@ -1,7 +1,5 @@
 .bg__pink{
     background-color:$light-pink;
-    position: relative;
-    z-index: 2;
     height: 664px;
 }
 
@@ -11,6 +9,9 @@
     justify-content: space-between;
     position: relative;
     padding: 30px 0;
+}
+.mayor{
+    display: flex;
 }
 
 .navegation{
@@ -46,8 +47,17 @@
     gap: 15px;
     align-items: center;
     font-family: 'DM Sans';
+
+    &:hover{
+        background-color: $grey;
+        cursor: pointer;
+    }
 }
 
+//cream title//
+.container-left{
+    width: 50%;
+}
 //cream title//
 .cream__title{
     font-weight: 400;
@@ -82,6 +92,11 @@
     color: $red;
     font-family: 'DM Sans';
     margin-left: 15px;
+
+    &:hover{
+        background-color: $grey;
+        cursor: pointer;
+    }
 }
 
 //milk//
@@ -107,48 +122,78 @@
     padding-top: 20px;
 }
 
+//cream title//
+.hola {
+    width: 50%;
+    position: relative;
+}
 //ellipse//
 .ellipse__svg{
     position: absolute;
-    top: 40px;
-    left: 627px;
+    top: -74px;
 }
 
 .ellipse__img {
     position: absolute;
-    top: 102px;
-    left: 734px;;
+    top: -15px;
+    left: 111px;
 }
 
-//number//
-.number{
+//sixteen//
+.sixteen__container{
     position: absolute;
-    top: 115px;
-    right: 55px;
+    right: 0;
+    z-index: 3;
 }
 
-.number__item{
-    margin-bottom: 15px;
+
+.sixteen__item{
+    margin-bottom:25px;
 }
 
-.number__span{
+.sixteen__span{
     color: $red;
     font-size: 46px;
-    font-weight: 400;
 }
 
-.number__svg{
+.sixteen__svg{
     position: absolute;
-    right: 30px;
+    right: -10px;
 }
 
-.number__paragraph{
+.sixteen__paragraph{
     color: $white;
-    text-align: center;
+    font-family: 'DM Sans';
 }
-//women//
-.women{
+
+
+//twenty three//
+.twenty-three__container{
     position: absolute;
-    right: 10px;
-    bottom: 10px;
+    top: 130px;
+    right: -22px;
+    z-index: 4;
+}
+
+.twenty-three__span{
+    color: $red;
+    font-size: 46px;
+}
+
+.twenty-three__paragraph{
+    color: $white;
+    font-family: 'DM Sans';
+}
+
+.twenty-three__svg {
+    position: absolute;
+    right: -10px;
+    top: 130px;
+}
+
+//women//
+.women__img{
+    position: absolute;
+    bottom: 2px;
+    right: 28px;
 }
