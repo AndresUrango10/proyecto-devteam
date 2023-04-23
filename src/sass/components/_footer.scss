@@ -1,0 +1,100 @@
+.containerfooter {
+    background-color: $transparet-pink;
+    position: relative;
+}
+.contacts {
+    padding-bottom: 0px;
+}
+.contacts__list {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 32px;
+    width: 1200px;
+}
+.contacts__list__item {
+    width: 368px;
+    height: 538px;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    background-color: $white;
+    padding: 40px;
+    position:relative;
+    top: -99px;
+    text-align: left;
+    font-family: 'DM Sans', sans-serif;
+}
+.separator {
+    border-bottom: 1px #ececec solid;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.contacts__list__item__title{
+    color: $white;
+    background-color: $crema;
+    width: 75.1px;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    margin-bottom: 32px;
+}
+.contacts__list__item__title--green{
+    color: $white;
+    background-color: $green;
+    width: 138px;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    margin-bottom: 32px;
+}
+.contacts__list__item__subtitle{
+    color: #000000;
+    margin-bottom: 8px;
+    line-height: 1.86;
+    font-weight: 500;
+}
+.contacts__list__item__paragraph{
+    color: #907E82;
+    letter-spacing: 0.04em;
+    font-size: 16px;
+    font-weight: 500;
+}
+.contacts__schedule_day{
+    color: #000000;
+    letter-spacing: 0.04em;
+    line-height: 1.86;
+    font-weight: 500;
+}
+.contacts__schedule_hour{
+    color: $deep-pink;
+    letter-spacing: 0.04em;
+    line-height: 1.86;
+    font-weight: 500;
+
+}
+// .footer__container {
+//     display: flex;
+//     justify-content: space-between;
+//     text-align: center;
+// }
+// .footer__list {
+//     display:flex;
+//     justify-content: space-between;
+//     text-align: center;
+// }
+// .footer__item__svg {
+// fill: $red;
+// }
+.button__svg {
+    width: 4.13px;
+    height: 8px;
+}
+// .svg {
+//     display:flex;
+//     justify-content: space-between;
+//     text-align: center;
+// }
