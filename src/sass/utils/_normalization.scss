@@ -42,15 +42,14 @@ address {
 body{
     font-family: 'DM Sans', sans-serif;
     font-family: 'Titan One', cursive;
+    font-size: 14px;
 }
 /*------------styles index-----------------------------*/
 
 .container {
-    width: auto;
-    padding-left: 16px;
-    padding-right: 16px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 1200px;
+    padding: 0 16px;
+    margin: 0 auto;
 }
 
 section {

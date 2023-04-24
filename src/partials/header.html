@@ -1,9 +1,11 @@
 <div class="bg__pink">
   <div class="container">
     <header class="header">
-      <svg class="" width="199px" height="50px">
-        <use href="./images/icons.svg#logo"></use>
-      </svg>
+      <a href="#">
+        <svg class="" width="199px" height="50px">
+          <use href="./images/icons.svg#logo"></use>
+        </svg>
+      </a>
 
       <nav class="navegation">
         <ul class="navegation__list list">
@@ -26,15 +28,27 @@
           </li>
         </ul>
       </nav>
-      <button class="navegation__btn" type="button">
-        Buy now
-        <svg class="contact__icon" width="10px" height="10px">
-          <use href="./images/icons.svg#mayor"></use>
-        </svg>
-      </button>
+      <div class="btn__container">
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40px" height="40px">
+            <use href="./images/icons.svg#toggle"></use>
+          </svg>
+        </button>
+
+        <button class="navegation__btn" type="button">
+          Buy now
+          <svg class="contact__icon" width="10px" height="10px">
+            <use href="./images/icons.svg#mayor"></use>
+          </svg>
+        </button>
+      </div>
     </header>
 
-    <div class="mayor">
+    <div class="container__father">
       <div class="container-left">
         <ul class="cream list">
           <h1 class="cream__title">
@@ -48,36 +62,98 @@
 
         <ul class="milk list">
           <li class="milk__item">
-            <img
-              class="milk__jug"
-              src="./images/milk-jug.png"
-              alt="jarra de leche"
-            />
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/header/deskopt/milk-jug.png    1x,
+                  ./images/header/deskopt/milk-jug@2x.png 2x
+                "
+              />
+              <source
+                media="(min-width: 768px) and (max-width: 1279px)"
+                srcset="
+                  ./images/header/tablet/milk-jug.png    1x,
+                  ./images/header/tablet/milk-jug@2x.png 2x
+                "
+              />
+
+              <img
+                class="milk__jug"
+                src="./images/header/deskopt/milk-jug.png"
+                alt="jarra de leche"
+              />
+            </picture>
           </li>
           <li class="milk__item">
             <p class="milk__paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et
-              <img
-                class="milk__arrow"
-                src="./images/arrow-right.png"
-                alt="flecha derecha"
-              />
+
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/header/deskopt/arrow-right.png    1x,
+                    ./images/header/deskopt/arrow-right@2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px) and (max-width: 1279px)"
+                  srcset="
+                    ./images/header/tablet/arrow-right.png    1x,
+                    ./images/header/tablet/arrow-right@2x.png 2x
+                  "
+                />
+                <img
+                  class="milk__arrow"
+                  src="./images/header/deskopt/arrow-right.png"
+                  alt="flecha derecha"
+                />
+              </picture>
             </p>
           </li>
         </ul>
       </div>
 
-      <div class="hola">
+      <div class="container-rigth">
         <ul class="ellipse list">
           <li class="ellipse__item">
-            <svg class="ellipse__svg" width="534px" height="534px">
+            <svg class="ellipse__svg">
               <use href="./images/icons.svg#ellipse"></use>
             </svg>
           </li>
 
           <li class="ellipse__item">
-            <img class="ellipse__img" src="./images/helado.png" alt="helado" />
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/header/deskopt/helado.png    1x,
+                  ./images/header/deskopt/helado@2x.png 2x
+                "
+              />
+              <source
+                media="(min-width: 768px) and (max-width: 1279px)"
+                srcset="
+                  ./images/header/tablet/helado.png    1x,
+                  ./images/header/tablet/helado@2x.png 2x
+                "
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./images/header/mobil/helado.png    1x,
+                  ./images/header/mobil/helado@2x.png 2x
+                "
+              />
+
+              <img
+                class="ellipse__img"
+                src="./images/header/deskopt/helado.png"
+                alt="helado"
+              />
+            </picture>
           </li>
         </ul>
 
@@ -107,7 +183,27 @@
 
         <ul class="women list">
           <li class="women__item">
-            <img class="women__img" src="./images/women.png" alt="mujer" />
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/header/deskopt/women.png    1x,
+                  ./images/header/deskopt/women@2x.png 2x
+                "
+              />
+              <source
+                media="(min-width: 768px) and (max-width: 1279px)"
+                srcset="
+                  ./images/header/tablet/women.png    1x,
+                  ./images/header/tablet/women@2x.png 2x
+                "
+              />
+              <img
+                class="women__img"
+                src="./images/header/deskopt/women.png"
+                alt="mujer"
+              />
+            </picture>
           </li>
         </ul>
       </div>
