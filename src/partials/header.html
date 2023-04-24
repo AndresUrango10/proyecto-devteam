@@ -1,64 +1,96 @@
-<div class="container">
-  <header>
-    <svg class="" width="199px" height="50px">
-      <use href="./images/icons.svg#logo"></use>
-    </svg>
+<div class="bg__pink">
+  <div class="container">
+    <header class="header">
+      <a href="#">
+        <svg class="" width="199px" height="50px">
+          <use href="./images/icons.svg#logo"></use>
+        </svg>
+      </a>
 
-    <nav class="navegation">
-      <ul class="navegation__list list">
-        <li class="navegation__item">
-          <a class="navegation__link link" href="#"> Home </a>
-        </li>
-        <li class="navegation__item">
-          <a class="navegation__link link" href="#"> About us </a>
-        </li>
-        <li class="navegation__item">
-          <a class="navegation__link link" href="#"> How it’s made? </a>
-        </li>
-        <li class="navegation__item">
-          <a class="navegation__link link" href="#"> Our products </a>
-        </li>
-        <li class="navegation__item">
-          <a class="navegation__link link" href="#"> Contact </a>
-        </li>
-      </ul>
-    </nav>
-    <button type="button">
-      Buy now
-      <svg class="contact__icon" width="16px" height="12px">
-        <use href="./images/icons.svg#mayor"></use>
-      </svg>
-    </button>
-  </header>
-  <h1>ice cream made with <span>passion</span></h1>
-  <button>Products</button>
-  <button>How it’s made?</button>
+      <nav class="navegation">
+        <ul class="navegation__list list">
+          <li class="navegation__item">
+            <a class="navegation__link link navegation__link--active" href="#">
+              Home
+            </a>
+          </li>
+          <li class="navegation__item">
+            <a class="navegation__link link" href="#"> About us </a>
+          </li>
+          <li class="navegation__item">
+            <a class="navegation__link link" href="#"> How it’s made? </a>
+          </li>
+          <li class="navegation__item">
+            <a class="navegation__link link" href="#"> Our products </a>
+          </li>
+          <li class="navegation__item">
+            <a class="navegation__link link" href="#"> Contact </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="btn__container">
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40px" height="40px">
+            <use href="./images/icons.svg#toggle"></use>
+          </svg>
+        </button>
 
-  <ul class="list">
-    <li>
-      <img src="./images/milk-jug.jpg" alt="jarra de leche" />
-    </li>
-    <li>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et
-        <img src="./images/arrow.jpg" alt="" />
-      </p>
-    </li>
-  </ul>
+        <button class="navegation__btn" type="button">
+          Buy now
+          <svg class="contact__icon" width="10px" height="10px">
+            <use href="./images/icons.svg#mayor"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
 
-  <ul class="list">
-    <li>
-      <svg class="" width="50px" height="50px">
-        <use href="./images/icons.svg#ellipse"></use>
-      </svg>
-    </li>
+    <div class="container__father">
+      <div class="container-left">
+        <ul class="cream list">
+          <h1 class="cream__title">
+            ice cream made with <span class="cream__span">passion</span>
+          </h1>
+          <li class="cream__item">
+            <button class="cream__products">Products</button>
+            <button class="cream__howitmade">How it’s made?</button>
+          </li>
+        </ul>
 
-    <li>
-      <img src="./images/frozen.jpg" alt="helado" />
-    </li>
-  </ul>
+        <ul class="milk list">
+          <li class="milk__item">
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/header/deskopt/milk-jug.png    1x,
+                  ./images/header/deskopt/milk-jug@2x.png 2x
+                "
+              />
+              <source
+                media="(min-width: 768px) and (max-width: 1279px)"
+                srcset="
+                  ./images/header/tablet/milk-jug.png    1x,
+                  ./images/header/tablet/milk-jug@2x.png 2x
+                "
+              />
 
+<<<<<<< HEAD
+              <img
+                class="milk__jug"
+                src="./images/header/deskopt/milk-jug.png"
+                alt="jarra de leche"
+              />
+            </picture>
+          </li>
+          <li class="milk__item">
+            <p class="milk__paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et
+=======
   <ul class="list">
     <li>
       <span
@@ -68,22 +100,129 @@
       ></span>
       <p>Cafes</p>
     </li>
+>>>>>>> dev
 
-    <li>
-      <span
-        >16
-        <svg class="" width="50px" height="50px">
-          <use href="./images/icons.svg#ellipse-white"></use></svg
-      ></span>
-      <p>Food trucks</p>
-    </li>
-  </ul>
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/header/deskopt/arrow-right.png    1x,
+                    ./images/header/deskopt/arrow-right@2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px) and (max-width: 1279px)"
+                  srcset="
+                    ./images/header/tablet/arrow-right.png    1x,
+                    ./images/header/tablet/arrow-right@2x.png 2x
+                  "
+                />
+                <img
+                  class="milk__arrow"
+                  src="./images/header/deskopt/arrow-right.png"
+                  alt="flecha derecha"
+                />
+              </picture>
+            </p>
+          </li>
+        </ul>
+      </div>
 
-  <ul class="list">
-    <li>
-      <img src="./images/women.jpg" alt="mujer" />
-    </li>
-  </ul>
+      <div class="container-rigth">
+        <ul class="ellipse list">
+          <li class="ellipse__item">
+            <svg class="ellipse__svg">
+              <use href="./images/icons.svg#ellipse"></use>
+            </svg>
+          </li>
 
+<<<<<<< HEAD
+          <li class="ellipse__item">
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/header/deskopt/helado.png    1x,
+                  ./images/header/deskopt/helado@2x.png 2x
+                "
+              />
+              <source
+                media="(min-width: 768px) and (max-width: 1279px)"
+                srcset="
+                  ./images/header/tablet/helado.png    1x,
+                  ./images/header/tablet/helado@2x.png 2x
+                "
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./images/header/mobil/helado.png    1x,
+                  ./images/header/mobil/helado@2x.png 2x
+                "
+              />
+
+              <img
+                class="ellipse__img"
+                src="./images/header/deskopt/helado.png"
+                alt="helado"
+              />
+            </picture>
+          </li>
+        </ul>
+
+        <ul class="sixteen list">
+          <li class="sixteen__item">
+            <div class="sixteen__container">
+              <span class="sixteen__span">16</span>
+              <p class="sixteen__paragraph">Cafes</p>
+            </div>
+            <svg class="sixteen__svg" width="30px" height="30px">
+              <use href="./images/icons.svg#ellipse-white"></use>
+            </svg>
+          </li>
+        </ul>
+
+        <ul class="twenty-threelist list">
+          <li class="twenty-three__item">
+            <div class="twenty-three__container">
+              <span class="twenty-three__span">23</span>
+              <p class="twenty-three__paragraph">food trucks</p>
+            </div>
+            <svg class="twenty-three__svg" width="30px" height="30px">
+              <use href="./images/icons.svg#ellipse-white"></use>
+            </svg>
+          </li>
+        </ul>
+
+        <ul class="women list">
+          <li class="women__item">
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/header/deskopt/women.png    1x,
+                  ./images/header/deskopt/women@2x.png 2x
+                "
+              />
+              <source
+                media="(min-width: 768px) and (max-width: 1279px)"
+                srcset="
+                  ./images/header/tablet/women.png    1x,
+                  ./images/header/tablet/women@2x.png 2x
+                "
+              />
+              <img
+                class="women__img"
+                src="./images/header/deskopt/women.png"
+                alt="mujer"
+              />
+            </picture>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+=======
   <img src="./images/women.jpg" alt="" />
+>>>>>>> dev
 </div>
