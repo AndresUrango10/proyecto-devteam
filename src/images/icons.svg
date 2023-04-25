@@ -4,13 +4,13 @@ xmlns="http://www.w3.org/2000/svg">
 
   <defs>
   <!--mayor-->
-<symbol id="mayor" >
-<path d="M1.61646 1L6.04413 5L1.61646 9" stroke="#D41443" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<symbol id="mayor">
+<path d="M1.61646 1L6.04413 5L1.61646 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol>
 
- <!--mayor-white-->
+<!--mayor-white-->
 <symbol id="mayor-white" viewBox="0 0 19 32">
-<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round"  d="M3.2 3.2l12.8 12.8-12.8 12.8"></path>
+<path fill="none" stroke="#fff" style="stroke:#fff)" stroke-linejoin="round" stroke-linecap="round"  d="M3.2 3.2l12.8 12.8-12.8 12.8"></path>
 </symbol>
 <!--logo-->
 <symbol id="logo">
