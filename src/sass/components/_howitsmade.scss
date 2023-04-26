@@ -1,0 +1,245 @@
+.how__its__made {
+
+    background: $transparet-pink;
+}
+
+.how__its__made__container {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.how__its__made__title__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.how__its__made__title__item {
+    gap: 16px;
+}
+
+.how__its__made__subtitle {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $light-pink;
+}
+
+.how__its__made__title {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 66px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $red;
+}
+
+
+.how__its__made__info__list {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+
+    gap: 99px;
+    background-image: url("../images/howitsmade/desckopt/backgraun-milk.png");
+    margin-bottom: 60px;
+}
+
+.how__its__made__info__item__img {
+    width: 501px;
+    height: 501px;
+}
+
+.how__its__made__info__item {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.how__its__made__info__item__paragranone {
+    width: 463px;
+    height: 79px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 176%;
+    /* or 28px */
+
+    letter-spacing: 0.04em;
+
+    color: $black;
+}
+
+.how__its__made__info__item__paragrantwo {
+    width: 463px;
+    height: 155px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 194%;
+    /* or 27px */
+
+    letter-spacing: 0.04em;
+    color: $grey-card;
+}
+
+.how__its__made__info__item__btn {
+    width: 176px;
+    height: 44px;
+    border-radius: 22px;
+    background-color: $white;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    border: transparent;
+    color: $red;
+}
+
+
+
+.how__its__made__info__item__icon {
+    height: 10px;
+    width: 20px;
+}
+
+.how__its__made__description__list {
+    width: 1200px;
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 209px;
+}
+
+.how__its__made__description__item__icon {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 40px;
+}
+
+.how__its__made__description__item__title {
+    width: 98px;
+    height: 65px;
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 66px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $red;
+    margin-bottom: 16px;
+}
+
+.how__its__made__description__item__paragran {
+    width: 288px;
+    height: 52px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 176%;
+    /* or 28px */
+
+    letter-spacing: 0.02em;
+
+    color: $black;
+}
+
+
+/* Estilos para tabletas (entre 768px y 1279px) */
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+
+    .container {
+        width: 768px;
+    }
+
+    .how__its__made__title__list {
+        margin-bottom: 40px;
+    }
+
+    .how__its__made__subtitle {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    .how__its__made__title {
+        font-size: 48px;
+        line-height: 55px;
+    }
+
+    .how__its__made__info__list {
+        width: 768px;
+        background-image: none;
+        margin-bottom: 83px;
+    }
+
+    .how__its__made__info__item__img {
+        width: 336px;
+        height: 335px;
+    }
+
+    .how__its__made__info__item__paragranone {
+        width: 334px;
+        font-size: 14px;
+    }
+
+    .how__its__made__info__item__paragrantwo {
+        width: 334px;
+        line-height: 176%;
+    }
+
+    .how__its__made__description__list {
+        width: 768px;
+        justify-content: start;
+    }
+
+    .how__its__made__description__item__icon {
+        margin-bottom: 36px;
+    }
+
+    .how__its__made__description__item__title {
+        width: 98px;
+        height: 56px;
+        font-size: 48px;
+        line-height: 55px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+    }
+
+    .how__its__made__description__item__paragran {
+        width: 180px;
+        height: 71px;
+        font-size: 14px;
+        line-height: 174%;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+    .container {
+        width: 320px;
+    }
+}
