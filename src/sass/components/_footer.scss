@@ -1,9 +1,10 @@
 .containerfooter {
     background-color: $transparet-pink;
     position: relative;
+    padding-bottom: 0;
 }
-section {
-    padding: 0;
+.container {
+    padding-bottom: 0;
 }
 .contacts__list {
     display: flex;
@@ -118,6 +119,10 @@ section {
 .contacts__button--pink{
     background-color: #D41342;
     color: $white;
+    &:hover, 
+    &:focus {
+        cursor: pointer;
+    }
 }
 .contacts__button--white{
     background-color: $white;
@@ -126,12 +131,11 @@ section {
     &:hover, 
     &:focus {
         background-color: $grey;
+        fill: $grey;
         cursor: pointer;
     }
 }
 .button__svg {
-    width: 4.13px;
-    height: 8px;
     margin-left: 13px;
 }
 .footer__list {
@@ -148,7 +152,6 @@ section {
     width: 34px;
     height: 34px;
     border-radius: 50%;
-    padding: 7px;
     transition: background-color $time  $cubic-bezier;
     &:hover, 
     &:focus{
@@ -156,11 +159,23 @@ section {
         cursor: pointer;
     }
 }
+.footer__icon__github {
+    width:20px;
+    height:20px;
+}
+.footer__icon__telegram{
+    width:20.90px;
+    height:15.87px;
+}
+.footer__icon__facebook{
+    width:9.35px;
+    height:20.4px;
+}
 .background__svg--github{
     padding: 7px;
 }
 .background__svg--telegram{
-    padding: 9.07px 7.93px 9.07px 5.67px;
+    padding: 9.07px 7.9px 9.07px 5.67px;
 }
 .background__svg--facebook{
     padding: 6.8px 11.9px 6.8px 12.75px;
