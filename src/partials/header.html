@@ -28,6 +28,7 @@
           </li>
         </ul>
       </nav>
+
       <div class="btn__container">
         <button
           class="menu-toggle js-open-menu"
@@ -39,7 +40,7 @@
           </svg>
         </button>
 
-        <button class="navegation__btn" type="button">
+        <button class="navegation__btn" type="button" data-modal-open>
           Buy now
           <svg class="contact__icon" width="10px" height="10px">
             <use href="./images/icons.svg#mayor"></use>
@@ -47,6 +48,152 @@
         </button>
       </div>
     </header>
+
+    <!-- MENU TOGGLE -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="sidebar__icon" width="18px" height="18px">
+          <use href="./images/icons.svg#icon-cerrar"></use>
+        </svg>
+      </button>
+
+      <div class="container__btn">
+        <button class="sidebar__btn" type="button" data-modal-buy-open>
+          Buy now
+          <svg class="contact__icon" width="10px" height="10px">
+            <use href="./images/icons.svg#mayor"></use>
+          </svg>
+        </button>
+      </div>
+
+      <ul class="sidebar list">
+        <li class="sidebar__item">
+          <a class="sidebar__link link navegation__link--active" href="#">
+            Home
+          </a>
+        </li>
+        <li class="sidebar__item">
+          <a class="sidebar__link link" href="#"> About us </a>
+        </li>
+        <li class="sidebar__item">
+          <a class="sidebar__link link" href="#"> How it’s made? </a>
+        </li>
+        <li class="sidebar__item">
+          <a class="sidebar__link link" href="#"> Our products </a>
+        </li>
+        <li class="sidebar__item">
+          <a class="sidebar__link link" href="#"> Contact </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- modal -->
+
+    <div class="backdrop is-hidden" data-modal data-modal-buy>
+      <div class="modal">
+        <button class="modal__btn" data-modal-close data-modal-buy-close>
+          <svg class="modal__iconX" width="18px" height="18px">
+            <use href="./images/icons.svg#icon-cerrar"></use>
+          </svg>
+        </button>
+        <p class="modal__data">
+          Para mas información, nos contactaremos con usted
+        </p>
+
+        <form>
+          <label class="form__label" for="nombre">Nombre completo:</label>
+
+          <div class="form__container">
+            <input
+              class="form__input"
+              type="text"
+              id="nombre"
+              name="nombre"
+              autofocus
+              required
+              placeholder="Andrés Felipe Urango Pacheco"
+            />
+            <svg class="form__icon" width="18px" height="18px">
+              <use href="./images/icons.svg#icon-man"></use>
+            </svg>
+          </div>
+
+          <label class="form__label" for="telefono">Telefono:</label>
+
+          <div class="form__container">
+            <input
+              class="form__input"
+              type="tel"
+              id="telefono"
+              name="telefono"
+              required
+              placeholder="+57 322 1234567"
+            />
+            <svg class="form__icon" width="18px" height="18px">
+              <use href="./images/icons.svg#icon-tel"></use>
+            </svg>
+          </div>
+
+          <label class="form__label" for="helado">Tipo de helado:</label>
+          <select class="form__select" id="helado" name="helado">
+            <option value="ice_cream">Ice Cream</option>
+            <option value="ice_caffe">Ice Caffe</option>
+            <option value="milkshakes">Milkshakes</option>
+          </select>
+
+          <ul class="form-order">
+            <label class="form__label" for="tamano">Tamaño:</label>
+
+            <li class="form__order__item">
+              <input
+                type="radio"
+                id="tamano"
+                name="tamano"
+                value="pequeno"
+                required
+              />
+              <label class="form__label" for="pequeno">Pequeño</label>
+            </li>
+
+            <li class="form__order__item">
+              <input type="radio" id="tamano" name="tamano" value="mediano" />
+              <label class="form__label" for="mediano">Mediano</label>
+            </li>
+
+            <li class="form__order__item">
+              <input type="radio" id="tamano" name="tamano" value="grande" />
+              <label class="form__label" for="grande">Grande</label>
+            </li>
+          </ul>
+
+          <label class="form__label">
+            Cantidad
+            <input
+              type="number"
+              name="weight"
+              min="1"
+              max="50"
+              step="1"
+              value="1"
+            />
+          </label>
+
+          <label class="form__label" for="instrucciones"
+            >Instrucciones especiales:</label
+          >
+          <textarea
+            class="form__textarea"
+            id="instrucciones"
+            name="instrucciones"
+            cols="10"
+            rows="10"
+            placeholder="introduzca el texto"
+          ></textarea>
+
+          <button class="form__btn" type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
 
     <div class="container__father">
       <div class="container-left">
