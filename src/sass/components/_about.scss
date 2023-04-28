@@ -1,1 +1,151 @@
-
+.box-about-us {
+  margin-bottom: 220px;
+}
+.box-carrusel {
+  width: 1200px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  position: relative;
+}
+.container-testimony {
+  display: flex;
+  position: absolute;
+  animation-name: container-testimony-mv;
+  animation-duration: 19s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes container-testimony-mv {
+  0% {
+    left: 0%;
+  }
+  26% {
+    left: 0%;
+  }
+  37% {
+    left: -97%;
+  }
+  63% {
+    left: -97%;
+  }
+  74% {
+    left: -195%;
+  }
+  100% {
+    left: -195%;
+  }
+}
+.card-testimony {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1168px;
+  height: 310.75px;
+}
+.card-testimony__box {
+  width: 75%;
+  height: 138px;
+  background-color: $grey-testimony;
+  margin-top: 16px;
+  position: relative;
+}
+.card-testimony__p {
+  text-align: center;
+  margin: 47px 109px 39px 109px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 29.76px;
+  position: relative;
+}
+.card-testimony__icon {
+  width: 54px;
+  height: 40px;
+  position: absolute;
+  top: 32px;
+  left: 90px;
+}
+.card-testimony__line-one {
+  width: 83%;
+  height: 1px;
+  background-color: $grey-line-testimony;
+  position: absolute;
+  top: 76px;
+  left: 73px;
+}
+.card-testimony__line-two {
+  width: 83%;
+  height: 1px;
+  background-color: $grey-line-testimony;
+  position: absolute;
+  bottom: 27px;
+  left: 73px;
+}
+.card-testimony__points {
+  color: $red;
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+.card-testimony__name {
+  text-align: center;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29.76px;
+}
+// ------ icon home -------
+.carousel {
+  margin-top: 32px;
+  position: relative;
+  width: 72px;
+  height: 13px;
+  overflow: hidden;
+  border-radius: 6px;
+  left: 45%;
+}
+.carousel__box {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: -94%;
+  animation-name: box-decoration;
+  animation-duration: 19s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes box-decoration {
+  0% {
+    left: -94%;
+  }
+  26% {
+    left: -94%;
+  }
+  37% {
+    left: -52%;
+  }
+  63% {
+    left: -52%;
+  }
+  74% {
+    left: -12%;
+  }
+  100% {
+    left: -12%;
+  }
+}
+.carousel__icon-home {
+  width: 12px;
+  height: 12px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.carousel__elipse {
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  margin-left: 9px;
+  margin-right: 9px;
+}
