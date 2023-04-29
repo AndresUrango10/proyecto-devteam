@@ -1,15 +1,30 @@
 .how__its__made {
 
-    background: $transparet-pink;
+    background-color: $transparet-pink;
+    background-image: url("../images/howitsmade/desckopt/backgraun-milk.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding-bottom: 0px;
+
+}
+
+.how__its__madetwo {
+    background-color: $transparet-pink;
 }
 
 .how__its__made__container {
-    width: 1200px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+
 }
+
+
 
 .how__its__made__title__list {
     display: flex;
@@ -54,8 +69,9 @@
     align-items: center;
 
     gap: 99px;
-    background-image: url("../images/howitsmade/desckopt/backgraun-milk.png");
+
     margin-bottom: 60px;
+
 }
 
 .how__its__made__info__item__img {
@@ -192,7 +208,6 @@
 
     .how__its__made__info__list {
         width: 768px;
-        background-image: none;
         margin-bottom: 83px;
     }
 
@@ -241,5 +256,52 @@
 
     .container {
         width: 320px;
+    }
+
+    .how__its__made__subtitle {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .how__its__made__title {
+        font-size: 34px;
+        line-height: 39px;
+    }
+
+    .how__its__made__info__list {
+        width: 320px;
+        flex-direction: column;
+    }
+
+    .how__its__made__info__item__img {
+        width: 280px;
+        height: 279px;
+    }
+
+    .how__its__made__info__item__paragranone {
+        width: 220px;
+        height: 79px;
+        font-size: 12px;
+        line-height: 162%;
+    }
+
+    .how__its__made__info__item__paragrantwo {
+        width: 220px;
+        height: 181px;
+        font-size: 12px;
+        line-height: 162%;
+    }
+
+    .how__its__made__description__list {
+        width: 320px;
+        flex-direction: column;
+    }
+
+    .how__its__made__description__item__icon {
+        margin-bottom: 16px;
+    }
+
+    .how__its__made__description__item {
+        margin-bottom: 32px;
     }
 }
