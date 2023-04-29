@@ -1,16 +1,31 @@
 <section class="how__its__made">
     <div class="container how__its__made__container">
-
         <ul class="list how__its__made__title__list">
             <li class="how__its__made__title__item">
                 <p class="how__its__made__subtitle">tradition and love</p>
-                <h1 class="how__its__made__title">how it’s made?</h1>
+                <h2 class="how__its__made__title">how it’s made?</h2>
             </li>
         </ul>
 
         <ul class="list how__its__made__info__list">
             <li class="how__its__made__info__item">
-                <img class="how__its__made__info__item__img" src="./images/howitsmade/desckopt/img-milk.png" alt="" />
+                <picture>
+                    <source media="(min-width: 1280px)" srcset="
+            ./images/howitsmade/desckopt/img-milk-desktop.png    1x,
+            ./images/howitsmade/desckopt/img-milk-desktop@2x.png 2x
+            " />
+                    <source media="(min-width: 768px) and (max-width: 1279px)" srcset="
+            ./images/howitsmade/tablet/img-milk-table.png    1x,
+            ./images/howitsmade/tablet/img-milk-table@2x.png 2x
+            " />
+                    <source media="(max-width: 767px)" srcset="
+            ./images/howitsmade/mobile/img-milk-mobile.png    1x,
+            ./images/howitsmade/mobile/img-milk-mobile@2x.png 2x
+            " />
+
+                    <img class="how__its__made__info__item__img" src="./images/howitsmade/desckopt/img-milk-desktop.png"
+                        alt="cow milk" />
+                </picture>
             </li>
             <li class="how__its__made__info__item">
                 <p class="how__its__made__info__item__paragranone">
@@ -33,7 +48,6 @@
             </li>
         </ul>
     </div>
-
 </section>
 <section class="how__its__madetwo">
     <div class="container how__its__made__container">
