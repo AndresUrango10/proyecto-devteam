@@ -4,7 +4,7 @@
     position: relative;
     padding-bottom: 0;
 }
-.container {
+.containerfooter {
     padding-bottom: 0;
 }
 .contacts__list {
@@ -242,7 +242,9 @@
  /* Estilos para tablets (entre 768px y 1279px) */
 @media screen and (min-width: 768px) and (max-width: 1279px) {
     .container{
-        width: 100%;
+        width: 768px;
+    }
+    .containerfooter{
         height: 661px;
     }
     .contacts__list__item {
@@ -318,13 +320,14 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
     .container {
         width: 320px;
-        height: 1513px;
-        padding: 0;
         }
+    .containerfooter{
+        height: 1513px;
+    }
     .contacts__list {
         display: flex;
         flex-direction: column;
-        padding: 0 20px;
+        padding: 0 4px;
         gap: 20px;
         margin-bottom: 32px;
         }
@@ -433,7 +436,7 @@
     }
     .footer__lastparagraph {
         margin: 0 20px;
-        padding: 0 65px;
+        padding: 0 55px;
         line-height: 1.52;
         letter-spacing: 0;
     }
