@@ -3,10 +3,8 @@
   width: 1013px;
   height: 430px;
 }
-.gallery-item {
-  position: absolute;
-}
 .gallery-img {
+  position: absolute;
   border-radius: 20px;
 }
 .image-one {
@@ -55,10 +53,28 @@
   .container {
     width: 768px;
   }
+  .gallery-list {
+    width: 768px;
+  }
+  .gallery-img {
+    width: 105px;
+  }
+  .image-four {
+    width: 214px;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .container {
     width: 320px;
+  }
+  .gallery-list {
+    width: 320px;
+  }
+  .gallery-img {
+    width: 44px;
+  }
+  .image--four {
+    width: 89px;
   }
 }
