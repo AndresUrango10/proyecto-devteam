@@ -1,10 +1,9 @@
 
-.containerfooter {
+.containercontacts {
     background-color: $transparet-pink;
-    position: relative;
     padding-bottom: 0;
 }
-.containerfooter {
+.contacts {
     padding-bottom: 0;
 }
 .contacts__list {
@@ -147,6 +146,7 @@
 .button__svg {
     margin-left: 13.62px;
 }
+
 .footer__container {
     display: flex;
     justify-content: space-between;
@@ -312,9 +312,6 @@
     .container{
         width: 768px;
     }
-    .containerfooter{
-        height: 661px;
-    }
     .contacts__list__item {
         width: 224px;
         height: 528px;
@@ -339,9 +336,6 @@
         line-height: 1.66;
         letter-spacing: 0;
     }
-    .container__position  {
-        top: -298px;
-    }
     .contacts__schedule_day{
         font-size: 14px;
         letter-spacing: 0;
@@ -355,11 +349,6 @@
         }
     .contacts__buttons__list{
         gap: 14.5px;
-        margin-bottom: 40px;
-    }
-    .footer{
-        position: relative;
-        top: -298px;
     }
     .footer__list__itemsmall {
         text-transform: uppercase;
@@ -389,9 +378,6 @@
     .container {
         width: 320px;
         }
-    .containerfooter{
-        height: 1513px;
-    }
     .contacts__list {
         display: flex;
         flex-direction: column;
@@ -448,11 +434,6 @@
         flex-direction: column;
         align-items: center;
         gap: 10px;
-        margin-bottom: 40px;
-    }
-    .footer{
-        position: relative;
-        top: -302px;
     }
     .contacts__button{
         width: 161.45px;   
