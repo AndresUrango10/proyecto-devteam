@@ -1,7 +1,11 @@
+.gallery {
+  position: relative;
+}
 .gallery-list {
   position: relative;
   width: 1013px;
   height: 430px;
+  margin: 0 auto;
 }
 .gallery-img {
   position: absolute;
@@ -59,8 +63,46 @@
   .gallery-img {
     width: 105px;
   }
+  .image-one {
+    top: 110px;
+    left: -15px;
+  }
+  .image-two {
+    top: 66px;
+    left: 95px;
+  }
+  .image-three {
+    top: 177px;
+    left: 95px;
+  }
   .image-four {
     width: 214px;
+    top: 0;
+    left: 205px;
+  }
+  .image-five {
+    bottom: 106px;
+    left: 205px;
+  }
+  .image-six {
+    top: 88px;
+    right: 240px;
+  }
+  .image-seven {
+    top: 190px;
+    right: 240px;
+  }
+  .image-eight {
+    top: 54px;
+    right: 130px;
+  }
+  .image-nine {
+    top: 164px;
+    right: 130px;
+  }
+  .image-ten {
+    top: 125px;
+    right: 20px;
   }
 }
 
@@ -72,9 +114,48 @@
     width: 320px;
   }
   .gallery-img {
-    width: 44px;
+    width: 43px;
+    border-radius: 8px;
   }
-  .image--four {
+  .image-one {
+    top: 50px;
+    left: -15px;
+  }
+  .image-two {
+    top: 27px;
+    left: 30px;
+  }
+  .image-three {
+    top: 72px;
+    left: 30px;
+  }
+  .image-four {
+    top: 0;
+    left: 75px;
     width: 89px;
+  }
+  .image-five {
+    bottom: 296px;
+    left: 75px;
+  }
+  .image-six {
+    top: 32px;
+    right: 111px;
+  }
+  .image-seven {
+    top: 80px;
+    right: 111px;
+  }
+  .image-eight {
+    top: 19px;
+    right: 66px;
+  }
+  .image-nine {
+    top: 65px;
+    right: 66px;
+  }
+  .image-ten {
+    top: 45px;
+    right: 20px;
   }
 }
