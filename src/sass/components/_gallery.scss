@@ -1,6 +1,11 @@
 .gallery {
   position: relative;
 }
+.container-position{
+  position: absolute;
+  left: 300px;
+  top: -88px;
+}
 .gallery-list {
   position: relative;
   width: 1013px;
@@ -104,6 +109,10 @@
     top: 125px;
     right: 3px;
   }
+
+  .container-position{
+    left: 0;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -157,5 +166,9 @@
   .image-ten {
     top: 45px;
     right: 3px;
+  }
+
+  .container-position{
+    left: 0;
   }
 }
