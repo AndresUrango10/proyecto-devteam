@@ -3,9 +3,6 @@
     background-color: $transparet-pink;
     padding-bottom: 0;
 }
-.contacts {
-    padding-bottom: 0;
-}
 .contacts__list {
     display: flex;
     justify-content: space-between;
@@ -378,8 +375,11 @@
     .container {
         width: 320px;
         }
+        // .containercontacts{
+        //     height: 1513px;
+        // }
     .contacts {
-            height: 1211px;
+        height: 1150px;
     }
     .contacts__list {
         display: flex;
@@ -437,6 +437,7 @@
         flex-direction: column;
         align-items: center;
         gap: 10px;
+        margin-bottom: 40px;
     }
     .contacts__button{
         width: 161.45px;   
