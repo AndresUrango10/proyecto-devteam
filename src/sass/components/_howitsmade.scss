@@ -33,9 +33,24 @@
     justify-content: center;
     margin-bottom: 60px;
 
-    transition: transform 2s ease-in-out;
 
+    animation: title 3s infinite ease-in-out;
 }
+
+@keyframes title {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
 
 .how__its__made__title__item {
     gap: 16px;
@@ -150,7 +165,7 @@
     line-height: 21px;
     border: transparent;
     color: $red;
-
+    transition: transform 1s ease-in-out;
 
 }
 
@@ -285,6 +300,9 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+    .how__its__made {
+        background-image: url("../images/howitsmade/mobile/backgraun-milk-mobile.png");
+    }
 
     .container {
         width: 320px;
@@ -329,6 +347,15 @@
         flex-direction: column;
     }
 
+    .how__its__made__description__item__title {
+        width: 98px;
+        height: 56px;
+        font-size: 36px;
+        line-height: 41px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+    }
+
     .how__its__made__description__item__icon {
         margin-bottom: 16px;
     }
@@ -340,14 +367,10 @@
 
 /*-----------ANIMACION ------------------------*/
 
-.how__its__made__info__item__btn:hover {
+.how__its__made__info__item__btn:hover,
+.how__its__made__info__item__btn:focus {
     background: $grey;
     cursor: pointer;
-    transform: scale(1.2);
-
-}
-
-.how__its__made__title__list:hover {
     transform: scale(1.2);
 
 }
