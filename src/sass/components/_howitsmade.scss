@@ -1,14 +1,54 @@
-.how__its__made {
 
-    background-color: $transparet-pink;
-    background-image: url("../images/howitsmade/desckopt/backgraun-milk.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+ @media screen and (min-width: 1279px) {
+    .how__its__made {
+    
+            background-color: $transparet-pink;
+            background-image: url('.././images/howitsmade/desckopt/backgraun-milk.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-bottom: 0px;
 
-    padding-bottom: 0px;
 
-}
+         @media (min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi),
+         (min-resolution: 2dppx) {
+            background-color: $transparet-pink;
+                background-image: url('.././images/howitsmade/desckopt/bacgraun-desktop@2x.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding-bottom: 0px;
+         }
+
+     }
+ }
+
+ @media screen and (min-width: 320px) and (max-width: 767px) {
+     .how__its__madetwo {
+
+         background-color: $transparet-pink;
+         background-image: url('../images/howitsmade/mobile/backgraun-milk-mobile.png');
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         padding-bottom: 0px;
+
+
+         @media (min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi),
+         (min-resolution: 2dppx) {
+            background-color: $transparet-pink;
+            background-image: url('../images/howitsmade/mobile/bacgraun-mobile@2x.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-bottom: 0px;
+            
+         }
+
+     }
+ }
 
 .how__its__madetwo {
     background-color: $transparet-pink;
@@ -300,9 +340,6 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-    .how__its__made {
-        background-image: url("../images/howitsmade/mobile/backgraun-milk-mobile.png");
-    }
 
     .container {
         width: 320px;
@@ -354,6 +391,7 @@
         line-height: 41px;
         letter-spacing: 0.04em;
         text-transform: uppercase;
+        text-align: start;
     }
 
     .how__its__made__description__item__icon {
