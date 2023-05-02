@@ -341,16 +341,6 @@
             background-image: url('.././images/howitsmade/mobile/backgraun-milk-mobile.png');
             background-position: center;
             background-repeat: no-repeat;
-        
-        
-            @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                background-color: $transparet-pink;
-                background-image: url('.././images/howitsmade/mobile/bacgraun-mobile@2x.png');
-                background-position: center;
-                background-repeat: no-repeat;
-            }
     }
 
     .how__its__made__info__item__img {
