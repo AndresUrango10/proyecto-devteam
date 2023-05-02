@@ -2,7 +2,7 @@
   position: relative;
   margin-bottom: 210px;
 }
-.container-position{
+.container-absolute{
   position: absolute;
   left: 95px;
   right: 95px;
@@ -115,8 +115,8 @@
     right: 3px;
   }
 
-  .container-position{
-    width: 768px;
+  .container-absolute{
+    left: 0;
   }
   
 }
