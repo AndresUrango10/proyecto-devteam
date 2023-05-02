@@ -1,24 +1,23 @@
-
  @media screen and (min-width: 1279px) {
-    .how__its__made {
-    
-            background-color: $transparet-pink;
-            background-image: url('.././images/howitsmade/desckopt/backgraun-milk.png');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding-bottom: 0px;
+     .how__its__made {
+
+         background-color: $transparet-pink;
+         background-image: url('.././images/howitsmade/desckopt/backgraun-milk.png');
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         padding-bottom: 0px;
 
 
          @media (min-device-pixel-ratio: 2),
          (min-resolution: 192dpi),
          (min-resolution: 2dppx) {
-            background-color: $transparet-pink;
-                background-image: url('.././images/howitsmade/desckopt/bacgraun-desktop@2x.png');
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                padding-bottom: 0px;
+             background-color: $transparet-pink;
+             background-image: url('.././images/howitsmade/desckopt/bacgraun-desktop@2x.png');
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: cover;
+             padding-bottom: 0px;
          }
 
      }
@@ -38,13 +37,13 @@
          @media (min-device-pixel-ratio: 2),
          (min-resolution: 192dpi),
          (min-resolution: 2dppx) {
-            background-color: $transparet-pink;
-            background-image: url('../images/howitsmade/mobile/bacgraun-mobile@2x.png');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding-bottom: 0px;
-            
+             background-color: $transparet-pink;
+             background-image: url('../images/howitsmade/mobile/bacgraun-mobile@2x.png');
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: cover;
+             padding-bottom: 0px;
+
          }
 
      }
@@ -60,8 +59,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-
 }
 
 
@@ -72,8 +69,6 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 60px;
-
-
     animation: title 3s infinite ease-in-out;
 }
 
