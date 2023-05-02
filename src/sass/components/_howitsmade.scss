@@ -336,6 +336,25 @@
     .how__its__made__info__list {
         width: 320px;
         flex-direction: column;
+
+            background-color: $transparet-pink;
+            background-image: url('.././images/howitsmade/mobile/backgraun-milk-mobile.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-bottom: 0px;
+        
+        
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-color: $transparet-pink;
+                background-image: url('.././images/howitsmade/mobile/bacgraun-mobile@2x.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding-bottom: 0px;
+            }
     }
 
     .how__its__made__info__item__img {
