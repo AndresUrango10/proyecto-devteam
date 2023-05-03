@@ -1,0 +1,501 @@
+
+.containercontacts {
+    background-color: $transparet-pink;
+    padding-bottom: 0;
+}
+.contacts__list {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 32px;
+    padding: 0 16px;
+    margin-bottom: 60px;
+}
+.contacts__list__item {
+    width: 368px;
+    height: 538px;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    background-color: $white;
+    padding: 40px;
+    text-align: left;
+    font-family: 'DM Sans', sans-serif;
+    &:hover,
+    &:focus{
+        transform: scale(1.1);
+        transition: transform 400ms $cubic-bezier;
+    }
+}
+.container__position  {
+    position:relative;
+    top: -99px;
+}
+.separator {
+    border-bottom: 1px #E1E1E1 solid;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.contacts__list__item__title{
+    color: $white;
+    background-color: $crema;
+    width: 75px;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    margin-bottom: 32px;
+    font-weight: 500;
+    font-family: 'DM Sans', sans-serif;
+}
+.contacts__list__item__title--green{
+    color: $white;
+    background-color: $green;
+    width: 138px;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    margin-bottom: 32px;
+    font-weight: 500;
+    font-family: 'DM Sans', sans-serif;
+}
+.contacts__list__item__subtitle{
+    color: $black;
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    font-weight: 500;
+}
+.contacts__list__item__paragraph{
+    color: $grey-card;
+    letter-spacing: 0.04em;
+    line-height: 1.83;
+    font-size: 16px;
+    font-weight: 500;
+}
+.contacts__schedule_day{
+    color: $black;
+    letter-spacing: 0.04em;
+    font-size: 16px;
+    line-height: 1.86;
+    font-weight: 500;
+}
+.contacts__schedule_hour {
+    color: $deep-pink;
+    letter-spacing: 0.04em;
+    font-size: 16px;
+    line-height: 1.86;
+    font-weight: 500;
+}
+.contacts__link {
+    color:$grey-card;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.83;
+    transition: color $time  $cubic-bezier;
+    &:hover, 
+    &:focus {
+        color: #D41342;
+    }
+}
+.contacts__buttons__list{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+.contacts__button{
+    border-radius: 22px;
+    width: 198px;
+    height: 44px;
+    font-weight: 700;
+    border: none;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.3;
+}
+.contacts__button--pink{
+    background-color: #D41342;
+    color: $white;
+    &:hover, 
+    &:focus {
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: transform $time $cubic-bezier;
+        text-shadow: 1px 1px 1px $white;
+    }
+}
+.contacts__button--white{
+    background-color: $white;
+    color: $red;
+    transition: background-color $time  $cubic-bezier;
+    &:hover, 
+    &:focus {
+        background-color: $grey;
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: transform $time $cubic-bezier;
+        text-shadow: 1px 1px 1px $red;
+    }
+}
+.button__svg {
+    margin-left: 13.62px;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__list {
+    width: 50%;
+}
+.footer__list__svg {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    padding:15px 16px 0 0;
+
+}
+.background__svg {
+    background-color: #FEA5BB;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    transition: background-color $time  $cubic-bezier;
+    &:hover, 
+    &:focus{
+        background-color:#D41342 ;
+        cursor: pointer;
+    }
+}
+.footer__icon__github {
+    width:20px;
+    height:20px;
+}
+.footer__icon__telegram{
+    width:20.90px;
+    height:15.87px;
+}
+.footer__icon__facebook{
+    width:9.35px;
+    height:20.4px;
+}
+.background__svg--github{
+    padding: 7px;
+    }
+.background__svg--telegram{
+    padding: 9.07px 7.9px 9.07px 5.67px;
+}
+.background__svg--facebook{
+    padding: 6.8px 11.9px 6.8px 12.75px;
+}
+.footer__list__itemsmall {
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 1.13;
+    font-family: 'Titan One', sans-serif;
+    letter-spacing: 0.04em;
+    padding: 16px;
+    color: $deep-pink;
+    animation-name: movetext1;
+    animation-duration: 5s;
+    animation-timing-function:linear;
+    animation-iteration-count:1;
+    animation-fill-mode:backwards
+}
+@keyframes movetext1 {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(0.5);
+    }
+    50% {
+        transform: scale(0.75);
+    }
+    60% {
+        transform: scale(0.85);
+    }
+    70% {
+        transform: scale(1);
+    }
+    80% {
+        transform: scale(1);
+    }
+    90% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.footer__list__itembig {
+    text-transform: uppercase;
+    font-size: 58px;
+    font-weight: 400;
+    line-height: 1.13;
+    font-family: 'Titan One', sans-serif;
+    letter-spacing: 0.06em;
+    padding-left: 16px;
+    color: $red;
+    animation-name: movetext2;
+    animation-duration: 5s;
+    animation-delay: 7s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode:none;
+}
+@keyframes movetext2 {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(0.5);
+    }
+    50% {
+        transform: scale(0.75);
+    }
+    60% {
+        transform: scale(0.85);
+    }
+    70% {
+        transform: scale(1);
+    }
+    80% {
+        transform: scale(1);
+    }
+    90% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.footer__svg__paragraph {
+    color: $black;
+    letter-spacing: 0.02em;
+    line-height: 1.86;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    text-align: right;
+    padding-right: 16px;
+    padding-top: 40px;
+}
+.footer__link{
+    color: $red;
+}
+.footer__lastparagraph {
+    text-align: center;
+    padding-bottom: 4px;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+    color: $grey-card;
+}
+.footer__separator {
+    border-bottom: 1px #E1E1E1 solid;
+    margin-top: 60px;
+    margin-bottom: 7px;
+}
+
+
+ /* Estilos para tablets (entre 768px y 1279px) */
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    .container{
+        width: 768px;
+    }
+    .contacts__list__item {
+        width: 224px;
+        height: 528px;
+        padding: 40px 32px;
+        }
+    .contacts__list__item__title{
+        width: 73px;
+        border-radius: 4px;
+    }
+    .contacts__list__item__subtitle{
+        margin-bottom: 12px;
+        font-size:14px;
+    }
+    .contacts__list__item__subtitle{
+        font-size: 12px;
+        line-height: 1.86;
+        letter-spacing: 0.04em;
+        font-weight: 500;
+    }
+    .contacts__list__item__paragraph{
+        font-size: 14px;
+        line-height: 1.66;
+        letter-spacing: 0;
+    }
+    .contacts__schedule_day{
+        font-size: 14px;
+        letter-spacing: 0;
+    }
+    .contacts__schedule_hour {
+        font-size: 14px;
+        letter-spacing: 0;
+    }
+    .contacts__link {
+        font-size: 14px;
+        }
+    .contacts__buttons__list{
+        gap: 14.5px;
+    }
+    .footer__list__itemsmall {
+        text-transform: uppercase;
+        font-size: 26px;
+        line-height: 1.15;
+        padding-bottom: 12px;
+    }
+    .footer__list__itembig {
+        font-size: 48px;
+        line-height: 1.14;
+    }
+    .footer__svg__paragraph {
+        font-size: 14px;
+        letter-spacing: 0;
+    }
+    .footer__container__svg {
+        margin-top: 60px;
+    }
+        .footer__separator {
+        margin-top: 40px;
+        margin-bottom: 8px;
+    }
+}
+
+/* Estilos para móviles (entre 320px y 767px) */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .container {
+        width: 320px;
+        }
+        // .containercontacts{
+        //     height: 1513px;
+        // }
+    .contacts {
+        height: 1150px;
+    }
+    .contacts__list {
+        display: flex;
+        flex-direction: column;
+        padding: 0 4px;
+        gap: 20px;
+        margin-bottom: 32px;
+        }
+    .contacts__list__item {
+        width: 280px;
+        height: 412px;
+        padding: 40px 32px;
+    }
+    .container__position  {
+        top: -302px;
+    }
+    .contacts__list__item__title{
+        width: 80px;
+        border-radius: 4px;
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    .contacts__list__item__title--green{
+        width: 130px;
+        border-radius: 4px;
+        font-size: 12px;;
+        margin-bottom: 20px;
+    }
+    .contacts__list__item__subtitle{
+        font-size: 12px;
+    }
+    .contacts__list__item__paragraph{
+        letter-spacing: 0;
+        line-height: 1.5;
+        font-size: 12px;
+        width: 179px;   
+        }
+    .contacts__schedule_day{
+        font-size: 12px;
+        letter-spacing: 0;
+    }
+    .contacts__schedule_hour {
+        font-size: 12px;
+        letter-spacing: 0;
+    }
+    .contacts__link {
+        font-size: 12px;
+        }
+    .separator {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+    .contacts__buttons__list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 40px;
+    }
+    .contacts__button{
+        width: 161.45px;   
+    }
+    .footer__container {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .footer__list {
+        width: 234px;
+    }
+    .footer__list__itemsmall {
+        font-size: 18px;
+        line-height: 1.16;
+        padding-top: 0;
+        padding-left: 22px;
+        padding-right: 0;
+        letter-spacing: 0;
+    }
+    .footer__list__itembig {
+        font-size: 34px;
+        letter-spacing: 0.04em;
+        padding-left: 20px;
+    }
+    .footer__list__svg {
+        display: flex;
+        justify-content: flex-end;
+        gap: 28.24px;
+        padding:0 20px 0 0;
+    }
+    .background__svg {
+        width: 32px;
+        height: 32px;
+    }
+    .background__svg--github{
+        padding: 6.59px;
+    }
+    .background__svg--telegram{
+        padding: 8.53px 7.47px 8.53px 5.33px;
+    }
+    .background__svg--facebook{
+        padding: 6.4px 11.2px 6.4px 12px;
+    }
+    .footer__svg__paragraph {
+        letter-spacing: 0;
+        font-size: 12px;
+        padding-right: 20px;
+    }
+    .footer__lastparagraph {
+        margin: 0 20px;
+        padding: 0 55px;
+        line-height: 1.52;
+        letter-spacing: 0;
+    }
+    .footer__separator {
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 16px;
+    }
+}
