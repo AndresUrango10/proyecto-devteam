@@ -1,0 +1,58 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Titan One', cursive;
+    font-size: 14px;
+}
+/*------------styles index-----------------------------*/
+
+.container {
+    width: 1200px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 60px 0;
+}
+

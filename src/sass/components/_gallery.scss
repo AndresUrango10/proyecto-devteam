@@ -1,0 +1,191 @@
+.gallery {
+  position: relative;
+  margin-bottom: 210px;
+}
+.gallery-list {
+  position: relative;
+  width: 1013px;
+  height: 430px;
+  margin: 0 auto;
+}
+.absolute-top{
+  position: absolute;
+  left: 95px;
+  right: 95px;
+  top: -88px;
+}
+.gallery-img {
+  position: absolute;
+  border-radius: 20px;
+}
+.image-one {
+  top: 142px;
+  left: 0;
+}
+.image-two {
+  top: 88px;
+  left: 146px;
+}
+.image-three {
+  left: 146px;
+  top: 233px;
+}
+.image-four {
+  top: 0;
+  left: 292px;
+}
+.image-five {
+  left: 292px;
+  bottom: 0;
+}
+.image-six {
+  top: 98px;
+  right: 292px;
+}
+.image-seven {
+  top: 245px;
+  right: 293px;
+}
+.image-eight {
+  top: 65px;
+  right: 146px;
+}
+.image-nine {
+  top: 212px;
+  right: 146px;
+}
+.image-ten {
+  top: 154px;
+  right: 0;
+}
+/* Estilos para tabletas (entre 768px y 1279px) */
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .container {
+    width: 768px;
+  }
+
+  .absolute-top{
+    left: 0;
+    right: 0;
+  }
+
+  .gallery{
+    margin-bottom: 120px;
+  }
+  .gallery-list {
+    width: 768px;
+  }
+  .gallery-img {
+    width: 105px;
+  }
+  .image-one {
+    top: 110px;
+    left: 3px;
+  }
+  .image-two {
+    top: 66px;
+    left: 111px;
+  }
+  .image-three {
+    top: 177px;
+    left: 111px;
+  }
+  .image-four {
+    width: 214px;
+    top: 0;
+    left: 221px;
+  }
+  .image-five {
+    bottom: 106px;
+    left: 221px;
+  }
+  .image-six {
+    top: 80px;
+    right: 222px;
+  }
+  .image-seven {
+    top: 190px;
+    right: 222px;
+  }
+  .image-eight {
+    top: 54px;
+    right: 112px;
+  }
+  .image-nine {
+    top: 164px;
+    right: 112px;
+  }
+  .image-ten {
+    top: 125px;
+    right: 3px;
+  }
+
+  
+  
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .container {
+    width: 320px;
+  }
+
+    .absolute-top{
+    left: 0;
+    right: 0;
+  }
+
+  .gallery{
+    margin-bottom: -115px;
+  }
+  .gallery-list {
+    width: 320px;
+  }
+  .gallery-img {
+    width: 43px;
+    border-radius: 8px;
+  }
+  .image-one {
+    top: 50px;
+    left: 1px;
+  }
+  .image-two {
+    top: 27px;
+    left: 46px;
+  }
+  .image-three {
+    top: 72px;
+    left: 46px;
+  }
+  .image-four {
+    top: 0;
+    left: 92px;
+    width: 89px;
+  }
+  .image-five {
+    bottom: 296px;
+    left: 92px;
+  }
+  .image-six {
+    top: 32px;
+    right: 93px;
+  }
+  .image-seven {
+    top: 80px;
+    right: 93px;
+  }
+  .image-eight {
+    top: 19px;
+    right: 48px;
+  }
+  .image-nine {
+    top: 65px;
+    right: 48px;
+  }
+  .image-ten {
+    top: 45px;
+    right: 3px;
+  }
+
+
+}
