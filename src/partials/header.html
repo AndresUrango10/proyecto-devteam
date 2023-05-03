@@ -1,99 +1,377 @@
-<div class="container">
-  <header>
-    <svg class="" width="199px" height="50px">
-      <use href="./images/icons.svg#logo"></use>
-    </svg>
+<div class="bg__pink .color-change-4x">
+  <div class="container">
+    <div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+    </div>
+    <header class="header">
+      <a href="#">
+        <svg class="header__logo" width="199px" height="50px">
+          <use href="./images/icons.svg#logo"></use>
+        </svg>
+      </a>
+      <!-- navegation -->
+      <nav class="navegation">
+        <ul class="navegation__list list">
+          <li class="navegation__item">
+            <a class="navegation__link link navegation__link--active" href="#">
+              Home
+            </a>
+          </li>
+          <li class="navegation__item">
+            <a class="navegation__link link" href="#"> About us </a>
+          </li>
+          <li class="navegation__item">
+            <a class="navegation__link link" href="#"> How it’s made? </a>
+          </li>
+          <li class="navegation__item">
+            <a class="navegation__link link" href="#"> Our products </a>
+          </li>
+          <li class="navegation__item">
+            <a class="navegation__link link" href="#"> Contact </a>
+          </li>
+        </ul>
+      </nav>
 
-    <nav class="navegation">
-      <ul class="navegation__list list">
-        <li class="navegation__item">
-          <a class="navegation__link link" href="#"> Home </a>
+      <div class="btn__container">
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40px" height="40px">
+            <use href="./images/icons.svg#toggle"></use>
+          </svg>
+        </button>
+
+        <button class="navegation__btn" type="button" data-modal-open>
+          Buy now
+          <svg class="contact__icon" width="10px" height="10px">
+            <use href="./images/icons.svg#mayor"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- MENU TOGGLE -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="sidebar__icon" width="18px" height="18px">
+          <use href="./images/icons.svg#icon-cerrar"></use>
+        </svg>
+      </button>
+
+      <div class="container__btn">
+        <button class="sidebar__btn" type="button" data-modal-buy-open>
+          Buy now
+          <svg class="contact__icon" width="10px" height="10px">
+            <use href="./images/icons.svg#mayor"></use>
+          </svg>
+        </button>
+      </div>
+
+      <ul class="sidebar list">
+        <li class="sidebar__item">
+          <a class="sidebar__link link navegation__link--active" href="#">
+            Home
+          </a>
         </li>
-        <li class="navegation__item">
-          <a class="navegation__link link" href="#"> About us </a>
+        <li class="sidebar__item">
+          <a class="sidebar__link link" href="#"> About us </a>
         </li>
-        <li class="navegation__item">
-          <a class="navegation__link link" href="#"> How it’s made? </a>
+        <li class="sidebar__item">
+          <a class="sidebar__link link" href="#"> How it’s made? </a>
         </li>
-        <li class="navegation__item">
-          <a class="navegation__link link" href="#"> Our products </a>
+        <li class="sidebar__item">
+          <a class="sidebar__link link" href="#"> Our products </a>
         </li>
-        <li class="navegation__item">
-          <a class="navegation__link link" href="#"> Contact </a>
+        <li class="sidebar__item">
+          <a class="sidebar__link link" href="#"> Contact </a>
         </li>
       </ul>
-    </nav>
-    <button type="button">
-      Buy now
-      <svg class="contact__icon" width="16px" height="12px">
-        <use href="./images/icons.svg#mayor"></use>
-      </svg>
-    </button>
-  </header>
-  <h1>ice cream made with <span>passion</span></h1>
-  <button>Products</button>
-  <button>How it’s made?</button>
+    </div>
 
-  <ul class="list">
-    <li>
-      <img src="./images/milk-jug.jpg" alt="jarra de leche" />
-    </li>
-    <li>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et
-        <img src="./images/arrow.jpg" alt="" />
-      </p>
-    </li>
-  </ul>
+    <!-- modal -->
 
-  <ul class="list">
-    <li>
-      <svg class="" width="50px" height="50px">
-        <use href="./images/icons.svg#ellipse"></use>
-      </svg>
-    </li>
+    <div class="backdrop is-hidden" data-modal data-modal-buy>
+      <div class="modal">
+        <button class="modal__btnX" data-modal-close data-modal-buy-close>
+          <svg class="modal__iconX" width="18px" height="18px">
+            <use href="./images/icons.svg#icon-cerrar"></use>
+          </svg>
+        </button>
+        <p class="modal__data">
+          Para mas información, nos contactaremos con usted
+        </p>
 
-    <li>
-      <img src="./images/frozen.jpg" alt="helado" />
-    </li>
-  </ul>
+        <form>
+          <label class="form__label" for="nombre">Nombre completo:</label>
 
-  <ul class="list">
-    <li>
-      <span
-        >16
-        <svg class="" width="50px" height="50px">
-          <use href="./images/icons.svg#ellipse-white"></use></svg
-      ></span>
-      <p>Cafes</p>
-    </li>
+          <div class="form__container">
+            <input
+              class="form__input"
+              type="text"
+              id="nombre"
+              name="nombre"
+              autofocus
+              required
+              placeholder="Andrés Felipe Urango Pacheco"
+            />
+            <svg class="form__icon" width="18px" height="18px">
+              <use href="./images/icons.svg#icon-man"></use>
+            </svg>
+          </div>
 
-    <li>
-      <span
-        >16
-        <svg class="" width="50px" height="50px">
-          <use href="./images/icons.svg#ellipse-white"></use></svg
-      ></span>
-      <p>Food trucks</p>
-    </li>
-  </ul>
+          <label class="form__label" for="telefono">Telefono:</label>
 
-  <ul class="list">
-    <li>
-      <img src="./images/women.jpg" alt="mujer" />
-    </li>
-  </ul>
+          <div class="form__container">
+            <input
+              class="form__input"
+              type="tel"
+              id="telefono"
+              name="telefono"
+              required
+              placeholder="+57 322 1234567"
+            />
+            <svg class="form__icon" width="18px" height="18px">
+              <use href="./images/icons.svg#icon-tel"></use>
+            </svg>
+          </div>
 
-  <ul class="list">
-    <li>
-      <img src="./images/women.jpg" alt="mujer" />
-    </li>
-  </ul>
+          <label class="form__label" for="helado">Tipo de helado:</label>
+          <select class="form__select" id="helado" name="helado">
+            <option value="ice_cream">Ice Cream</option>
+            <option value="ice_caffe">Ice Caffe</option>
+            <option value="milkshakes">Milkshakes</option>
+          </select>
 
-  <ul class="list">
-    <li>
-      <img src="./images/women.jpg" alt="mujer" />
-    </li>
-  </ul>
+          <ul class="form-order">
+            <label class="form__label" for="tamano">Tamaño:</label>
+
+            <li class="form__order__item">
+              <input
+                type="radio"
+                id="tamano"
+                name="tamano"
+                value="pequeno"
+                required
+              />
+              <label class="form__label" for="pequeno">Pequeño</label>
+            </li>
+
+            <li class="form__order__item">
+              <input type="radio" id="tamano" name="tamano" value="mediano" />
+              <label class="form__label" for="mediano">Mediano</label>
+            </li>
+
+            <li class="form__order__item">
+              <input type="radio" id="tamano" name="tamano" value="grande" />
+              <label class="form__label" for="grande">Grande</label>
+            </li>
+          </ul>
+
+          <label class="form__label">
+            Cantidad
+            <input
+              type="number"
+              name="weight"
+              min="1"
+              max="50"
+              step="1"
+              value="1"
+            />
+          </label>
+
+          <label class="form__label" for="instrucciones"
+            >Instrucciones especiales:</label
+          >
+          <textarea
+            class="form__textarea"
+            id="instrucciones"
+            name="instrucciones"
+            cols="10"
+            rows="10"
+            placeholder="Ej: que no traigan chispas de chocolate"
+          ></textarea>
+
+          <button class="form__btn" type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- container padre-->
+    <div class="container__father">
+      <!-- container-left -->
+      <div class="container-left">
+        <ul class="cream list">
+          <h1 class="cream__title">
+            ice cream made with <span class="cream__span">passion</span>
+          </h1>
+          <li class="cream__item">
+            <button class="cream__products">Products</button>
+            <button class="cream__howitmade">How it’s made?</button>
+          </li>
+        </ul>
+
+        <ul class="milk list">
+          <li class="milk__item">
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/header/deskopt/milk-jug.png    1x,
+                  ./images/header/deskopt/milk-jug@2x.png 2x
+                "
+              />
+              <source
+                media="(min-width: 768px) and (max-width: 1279px)"
+                srcset="
+                  ./images/header/tablet/milk-jug.png    1x,
+                  ./images/header/tablet/milk-jug@2x.png 2x
+                "
+              />
+
+              <img
+                class="milk__jug"
+                src="./images/header/deskopt/milk-jug.png"
+                alt="jarra de leche"
+              />
+            </picture>
+          </li>
+          <li class="milk__item">
+            <p class="milk__paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et
+
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/header/deskopt/arrow-right.png    1x,
+                    ./images/header/deskopt/arrow-right@2x.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px) and (max-width: 1279px)"
+                  srcset="
+                    ./images/header/tablet/arrow-right.png    1x,
+                    ./images/header/tablet/arrow-right@2x.png 2x
+                  "
+                />
+                <img
+                  class="milk__arrow"
+                  src="./images/header/deskopt/arrow-right.png"
+                  alt="flecha derecha"
+                />
+              </picture>
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- container rigth -->
+
+      <div class="container-rigth">
+        <ul class="ellipse list">
+          <li class="ellipse__item">
+            <svg class="ellipse__svg">
+              <use href="./images/icons.svg#ellipse"></use>
+            </svg>
+          </li>
+
+          <li class="ellipse__item">
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/header/deskopt/helado.png    1x,
+                  ./images/header/deskopt/helado@2x.png 2x
+                "
+              />
+              <source
+                media="(min-width: 768px) and (max-width: 1279px)"
+                srcset="
+                  ./images/header/tablet/helado.png    1x,
+                  ./images/header/tablet/helado@2x.png 2x
+                "
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./images/header/mobil/helado.png    1x,
+                  ./images/header/mobil/helado@2x.png 2x
+                "
+              />
+
+              <img
+                class="ellipse__img"
+                src="./images/header/deskopt/helado.png"
+                alt="helado"
+              />
+            </picture>
+          </li>
+        </ul>
+
+        <ul class="sixteen list">
+          <li class="sixteen__item">
+            <div class="sixteen__container">
+              <span class="sixteen__span">16</span>
+              <p class="sixteen__paragraph">Cafes</p>
+            </div>
+            <svg class="sixteen__svg" width="30px" height="30px">
+              <use href="./images/icons.svg#ellipse-white"></use>
+            </svg>
+          </li>
+        </ul>
+
+        <ul class="twenty-three list">
+          <li class="twenty-three__item">
+            <div class="twenty-three__container">
+              <span class="twenty-three__span">23</span>
+              <p class="twenty-three__paragraph">food trucks</p>
+            </div>
+            <svg class="twenty-three__svg" width="30px" height="30px">
+              <use href="./images/icons.svg#ellipse-white"></use>
+            </svg>
+          </li>
+        </ul>
+
+        <ul class="women list">
+          <li class="women__item">
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/header/deskopt/women.png    1x,
+                  ./images/header/deskopt/women@2x.png 2x
+                "
+              />
+              <source
+                media="(min-width: 768px) and (max-width: 1279px)"
+                srcset="
+                  ./images/header/tablet/women.png    1x,
+                  ./images/header/tablet/women@2x.png 2x
+                "
+              />
+              <img
+                class="women__img"
+                src="./images/header/deskopt/women.png"
+                alt="mujer"
+              />
+            </picture>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>

@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 h1,
 h2,
 h3,
@@ -24,11 +18,6 @@ html {
     box-sizing: inherit;
 }
 
-.text {
-    font-size: 16px;
-    line-height: 1.5;
-}
-
 img {
     display: block;
     max-width: 100%;
@@ -42,8 +31,6 @@ address {
 .link {
     text-decoration: none;
     color: inherit;
-    list-style: none;
-
 }
 
 .list {
@@ -52,19 +39,20 @@ address {
     margin: 0;
 }
 
-/*------------styles index-----------------------------*/
-* {
-    box-sizing: border-box;
+body{
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Titan One', cursive;
+    font-size: 14px;
 }
+/*------------styles index-----------------------------*/
 
 .container {
-    width: auto;
-    padding-left: 16px;
-    padding-right: 16px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 1200px;
+    padding: 0 16px;
+    margin: 0 auto;
 }
 
 section {
     padding: 60px 0;
 }
+
